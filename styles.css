@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Container for the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Product Section Styling */
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Product Image Styling */
+.product img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details Styling */
+.product-details {
+    max-width: 600px;
+}
+
+/* Product Title */
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Product Description */
+.product-details p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Product Price Styling */
+.product-details .price {
+    font-size: 1.5rem;
+    color: #e60000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Buy Now Button Styling */
+.btn-buy {
+    background-color: #e60000;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+    background-color: #b40000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .product-details {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    .product-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-details p {
+        font-size: 1rem;
+    }
+
+    .product-details .price {
+        font-size: 1.2rem;
+    }
+
+    .btn-buy {
+        font-size: 1rem;
+        padding: 12px 22px;
+    }
+}
